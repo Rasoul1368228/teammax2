@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تیم مکس | طراحی سایت حرفه‌ای، فروشگاهی و شرکتی</title>
+
+    <!-- ================== SEO Meta ================== -->
+    <meta
+      name="description"
+      content="تیم مکس، ارائه‌دهنده خدمات طراحی سایت حرفه‌ای شرکتی و فروشگاهی با تجربه کاربری عالی، سئو بهینه و سرعت بالا برای رشد کسب‌وکار شما."
+    />
+    <meta
+      name="keywords"
+      content="طراحی سایت، سایت شرکتی، سایت فروشگاهی، UI/UX، تیم مکس، توسعه وب، سئو سایت، وبسایت حرفه‌ای"
+    />
+    <meta name="author" content="تیم مکس" />
+    <link rel="canonical" href="https://teammax.ir/" />
+
+    <!-- ================== Open Graph ================== -->
+    <meta property="og:title" content="تیم مکس | طراحی سایت حرفه‌ای" />
+    <meta
+      property="og:description"
+      content="سایت‌های حرفه‌ای با طراحی مدرن، سرعت بالا و سئو بهینه. راه‌حل کامل برای کسب‌وکار آنلاین شما."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://teammax.ir/" />
+    <meta
+      property="og:image"
+      content="https://teammax.ir/images/og-image.png"
+    />
+    <meta property="og:locale" content="fa_IR" />
+    <meta property="og:site_name" content="تیم مکس" />
+
+    <!-- ================== Twitter Card ================== -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="تیم مکس | طراحی سایت حرفه‌ای" />
+    <meta
+      name="twitter:description"
+      content="سایت‌های حرفه‌ای با طراحی مدرن، سرعت بالا و سئو بهینه. راه‌حل کامل برای کسب‌وکار آنلاین شما."
+    />
+    <meta
+      name="twitter:image"
+      content="https://teammax.ir/images/og-image.png"
+    />
+    <meta name="twitter:site" content="@TeamMax" />
+
+    <!-- ================== Favicons ================== -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- ================== Structured Data (JSON-LD) ================== -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "تیم مکس",
+        "url": "https://teammax.ir/",
+        "logo": "https://teammax.ir/images/logo.png",
+        "sameAs": [
+          "https://instagram.com/nevisande2000",
+          "https://t.me/nevisande2000",
+          "https://eitaa.com/nevisande2000"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+98-21-12345678",
+          "contactType": "customer service",
+          "areaServed": "IR",
+          "availableLanguage": ["فارسی", "انگلیسی"]
+        }
+      }
+    </script>
+
+    <!-- ================== Fonts ================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dana:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* ================== RESET ================== */
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        font-family: "Dana", sans-serif;
+        line-height: 1.6;
+        scroll-behavior: smooth;
+        transition: background 0.3s, color 0.3s;
+      }
+      img {
+        max-width: 100%;
+        display: block;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      /* ================== VARIABLES ================== */
+      :root {
+        --bg: #fff;
+        --text: #0f1720;
+        --muted: #6b7280;
+        --brand: #ff3c00;
+        --card: #f8fafc;
+        --glass: rgba(15, 23, 32, 0.04);
+        --radius: 14px;
+        --shadow: 0 8px 30px rgba(15, 23, 32, 0.06);
+      }
+      body.dark {
+        --bg: #0e1015;
+        --text: #f8f8f8;
+        --muted: #a0a0a0;
+        --card: #1c1c1c;
+        --glass: rgba(255, 255, 255, 0.05);
+      }
+
+      /* ================== LAYOUT ================== */
+      body {
+        background: var(--bg);
+        color: var(--text);
+      }
+      .container {
+        width: min(1200px, 92%);
+        margin: 0 auto;
+      }
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* ================== HEADER ================== */
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 60;
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.7),
+          rgba(255, 255, 255, 0.55)
+        );
+        backdrop-filter: blur(6px);
+        border-bottom: 1px solid rgba(15, 23, 32, 0.04);
+        transition: background 0.25s;
+      }
+      body.dark header {
+        background: linear-gradient(
+          180deg,
+          rgba(30, 30, 30, 0.9),
+          rgba(30, 30, 30, 0.7)
+        );
+        border-color: rgba(255, 255, 255, 0.08);
+      }
+      .header-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 0;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        cursor: pointer;
+        user-select: none;
+        cursor: pointer;
+        color: var(--text);
+      }
+      /* ================== LOGO DARK STYLE ================== */
+
+      .logo-icon {
+        position: relative;
+        height: 44px;
+        width: 175px;
+        padding: 0 16px;
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: transparent;
+        color: var(--text);
+
+        font-weight: 800;
+        cursor: pointer;
+        overflow: hidden;
+
+        transition: transform 0.35s ease, background 0.35s ease,
+          box-shadow 0.35s ease;
+      }
+
+      /* متن کوتاه */
+      .logo-icon .short {
+        font-size: 18px;
+        letter-spacing: 1.4px;
+        font-family: "Space Grotesk", "Inter", sans-serif;
+        transition: opacity 0.25s ease, transform 0.35s ease;
+      }
+      /* نقطه برند */
+      .logo-icon .dot {
+        color: var(--brand);
+        margin: 0 1px;
+        display: inline-block;
+        animation: pulseDot 2.6s ease-in-out infinite;
+      }
+
+      /* انیمیشن خیلی ریز و شیک */
+      @keyframes pulseDot {
+        0% {
+          transform: scale(1);
+          opacity: 1;
+        }
+        50% {
+          transform: scale(1.25);
+          opacity: 0.75;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+
+      /* متن کامل */
+      .logo-icon .full {
+        position: absolute;
+        white-space: nowrap;
+        font-size: 16px;
+        font-weight: 600;
+        opacity: 0;
+        color: var(--muted);
+        transform: translateY(140%);
+        transition: opacity 0.35s ease,
+          transform 0.45s cubic-bezier(0.25, 0.9, 0.25, 1);
+      }
+
+      /* ---------- Hover (Light Mode) ---------- */
+      .logo-icon:hover {
+        background: var(--glass);
+        transform: translateY(-2px);
+        box-shadow: 0 10px 28px rgba(15, 23, 32, 0.18);
+      }
+
+      .logo-icon:hover .short {
+        opacity: 0;
+        transform: translateY(-140%);
+      }
+
+      .logo-icon:hover .full {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* ---------- Dark Mode Specific ---------- */
+      body.dark .logo-icon {
+        color: #f5f5f5;
+      }
+
+      body.dark .logo-icon:hover {
+        background: rgba(255, 255, 255, 0.06);
+        box-shadow: 0 12px 34px rgba(0, 0, 0, 0.55);
+      }
+
+      body.dark .logo-icon .full {
+        color: #bdbdbd;
+      }
+
+      nav.main-nav {
+        display: flex;
+        gap: 18px;
+        align-items: center;
+      }
+      nav.main-nav a {
+        font-weight: 600;
+        padding: 8px 12px;
+        border-radius: 10px;
+        color: var(--muted);
+        transition: all 0.18s;
+      }
+      nav.main-nav a:hover {
+        color: var(--brand);
+        background: var(--glass);
+        transform: translateY(-2px);
+      }
+      /* ================= CTA SECTION ================= */
+
+      .cta-section {
+        padding: 90px 0;
+        margin: 0 auto;
+      }
+
+      .cta-box {
+        background: linear-gradient(135deg, var(--brand), #ff7a4a);
+        border-radius: 20px;
+        padding: 35px 51px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        color: #130f0f;
+        box-shadow: 0 30px 80px rgba(255, 60, 0, 0.35);
+      }
+
+      /* نور نرم */
+      .cta-box::before,
+      .cta-box::after {
+        content: "";
+        position: absolute;
+        width: 280px;
+        height: 280px;
+        border-radius: 50%;
+        filter: blur(90px);
+        opacity: 0.55;
+        pointer-events: none;
+      }
+
+      /* نور بالا */
+      .cta-box::before {
+        top: -120px;
+        left: -120px;
+        background: rgba(255, 255, 255, 0.45);
+      }
+
+      /* نور پایین */
+      .cta-box::after {
+        bottom: -120px;
+        right: -120px;
+        background: rgba(255, 255, 255, 0.25);
+      }
+
+      .cta-text h2 {
+        margin: 0 0 10px;
+        font-size: 32px;
+        font-weight: 600;
+      }
+
+      .cta-text p {
+        margin: 0;
+        opacity: 0.9;
+        font-size: 16px;
+      }
+
+      /* دکمه CTA */
+      .cta-btn {
+        background: #fff;
+        color: var(--brand);
+        font-weight: 800;
+        padding: 16px 26px;
+        border-radius: 13px;
+        white-space: nowrap;
+        transition: transform 0.18s ease, box-shadow 0.18s ease;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+      }
+
+      .cta-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 18px 44px rgba(0, 0, 0, 0.35);
+      }
+
+      /* Dark mode هماهنگ */
+      body.dark .cta-box {
+        box-shadow: 0 30px 90px rgba(0, 0, 0, 0.6);
+      }
+
+      /* موبایل */
+      @media (max-width: 760px) {
+        .cta-box {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .cta-text h2 {
+          font-size: 28px;
+        }
+      }
+
+      .dark-toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 15px;
+        padding: 14px 20px;
+        border-radius: 15px;
+        font-weight: 700;
+        background: linear-gradient(90deg, var(--brand), #ff7a4a);
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 12px 30px rgba(255, 60, 0, 0.16);
+        font-size: 16px;
+        transition: transform 0.18s, box-shadow 0.18s;
+      }
+      .dark-toggle:hover {
+        box-shadow: 0 16px 36px rgba(255, 60, 0, 0.2);
+        transform: translateY(-2px);
+      }
+
+      .hamburger {
+        display: none;
+        flex-direction: column;
+        gap: 6px;
+        width: 36px;
+        height: 24px;
+        justify-content: center;
+        cursor: pointer;
+      }
+      .hamburger span {
+        display: block;
+        height: 2px;
+        border-radius: 2px;
+        background: var(--text);
+        transition: all 0.18s;
+      }
+
+      /* ================== HERO ================== */
+      .hero {
+        padding: 86px 0 60px;
+        animation: fadeInUp 1s forwards 0.2s;
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1fr 420px;
+        gap: 40px;
+        align-items: center;
+      }
+      .hero h1 {
+        font-size: 44px;
+        font-weight: 900;
+        margin: 0 0 14px;
+        color: var(--text);
+      }
+      .hero p {
+        margin: 0 0 24px;
+        color: var(--muted);
+        max-width: 60ch;
+      }
+      .hero-cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        padding: 14px 20px;
+        border-radius: 12px;
+        font-weight: 800;
+        background: linear-gradient(90deg, var(--brand), #ff7a4a);
+        color: #fff;
+        box-shadow: 0 12px 30px rgba(255, 60, 0, 0.16);
+        transition: transform 0.18s, box-shadow 0.18s;
+      }
+      .hero-cta:active {
+        transform: translateY(1px);
+      }
+      .hero-right {
+        border-radius: 16px;
+        padding: 18px;
+        border: 1px solid rgba(15, 23, 32, 0.08);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+        animation: fadeInUp 1s forwards 0.4s;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: transform 0.35s ease, box-shadow 0.35s ease,
+          border-color 0.35s ease, background 0.35s ease;
+      }
+      .hero-right:hover .hero-icon {
+        transform: scale(1.1);
+      }
+      .hero-right:nth-child(1) {
+        animation-delay: 0.3s;
+      }
+      .hero-right:nth-child(2) {
+        animation-delay: 0.45s;
+      }
+      .hero-right:nth-child(3) {
+        animation-delay: 0.6s;
+      }
+      .hero-right:nth-child(4) {
+        animation-delay: 0.75s;
+      }
+      .hero-icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 12px;
+        display: grid;
+        place-items: center;
+        margin-bottom: 12px;
+        background: linear-gradient(
+          135deg,
+          rgba(99, 102, 241, 0.18),
+          rgba(99, 102, 241, 0.05)
+        );
+        transition: transform 0.35s ease;
+      }
+      body.dark .hero-right {
+        background: rgba(255, 255, 255, 0.03);
+        border-color: rgba(255, 255, 255, 0.08);
+      }
+      body.dark .hero-icon svg {
+        stroke: #8b8cf8;
+      }
+
+      .hero-icon svg {
+        width: 22px;
+        height: 22px;
+        stroke: #6366f1;
+        stroke-width: 1.8;
+      }
+
+      /* Hover */
+      .hero-right:hover {
+        transform: translateY(-6px) scale(1.01);
+        box-shadow: 0 18px 55px rgba(0, 0, 0, 0.14);
+        border-color: rgba(99, 102, 241, 0.35);
+        background: linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.04),
+          rgba(99, 102, 241, 0.03)
+        );
+      }
+      .hero-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 22px;
+        margin-top: 30px;
+      }
+
+      .mini-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 18px;
+        animation: fadeInRight 0.5s forwards 0.6s;
+        opacity: 0;
+        transform: translateX(20px);
+      }
+      .mini-item .dot {
+        width: 44px;
+        height: 44px;
+        display: grid;
+        place-items: center;
+        border-radius: 10px;
+        background: linear-gradient(135deg, var(--brand), #ff7a4a);
+        color: #fff;
+        font-weight: 800;
+      }
+      .mini-item h4 {
+        margin: 0;
+        font-size: 16px;
+      }
+      .mini-item p {
+        margin: 6px 0 0;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      /* ================== ANIMATIONS ================== */
+      @keyframes fadeInUp {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes fadeInRight {
+        0% {
+          opacity: 0;
+          transform: translateX(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      @media (max-width: 1000px) {
+        .hero-grid {
+          grid-template-columns: 1fr 320px;
+        }
+      }
+      @media (max-width: 760px) {
+        nav.main-nav {
+          display: none;
+        }
+        .hamburger {
+          display: flex;
+        }
+        .hero-grid {
+          grid-template-columns: 1fr;
+          gap: 28px;
+        }
+      }
+
+      /* ====== Team Section ====== */
+      .team-section {
+        padding: 80px 0;
+      }
+
+      .team-section h2 {
+        font-size: 32px;
+        font-weight: 800;
+        margin-bottom: 16px;
+      }
+
+      .team-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 46px;
+        justify-items: center;
+      }
+
+      .team-member {
+        border-radius: var(--radius);
+        padding: 20px;
+        box-shadow: var(--shadow);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .team-member img {
+        border-radius: 40%;
+        width: 145px;
+        height: 127px;
+        margin-bottom: 10px;
+        object-fit: cover;
+      }
+
+      .team-member h4 {
+        margin: 8px 0 4px;
+        font-size: 16px;
+      }
+
+      .team-member p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      /* Hover Effect */
+      .team-member:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+      }
+
+      .social-links {
+        display: flex;
+        gap: 16px;
+        margin-top: 5px;
+      }
+
+      .social-links a {
+        display: inline-block;
+        text-decoration: none;
+        color: #070a3c;
+        font-weight: 600;
+        transition: transform 0.5s, color 0.2s;
+      }
+
+      .social-links a:hover {
+        transform: translateY(-3px) scale(1.2);
+        color: #ff7a4a;
+      }
+      /* Hover Effect for Card */
+      .team-member:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+      }
+
+      /* Responsive */
+      @media (max-width: 760px) {
+        .team-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media (max-width: 500px) {
+        .team-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .site-footer {
+        margin-top: 50px;
+        padding: 70px 0 0;
+        background: #ffffff;
+        color: #0f1720;
+        position: relative;
+        border-top: 1px solid rgba(15, 23, 32, 0.08);
+        box-shadow: 0 -30px 60px rgba(15, 23, 32, 0.06);
+      }
+
+      .footer-container {
+        width: min(1200px, 92%);
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1.2fr 1fr 1fr;
+        gap: 50px;
+        position: relative;
+      }
+
+      /* ستون‌ها */
+      .footer-col h4,
+      .footer-col.brand h3 {
+        margin-bottom: 14px;
+        color: #0f1720;
+      }
+
+      .footer-col.brand h3 {
+        font-size: 26px;
+        font-weight: 900;
+      }
+
+      .footer-col .dot {
+        color: var(--brand);
+      }
+
+      .footer-col p {
+        max-width: 42ch;
+        color: #4b5563;
+        line-height: 1.8;
+      }
+
+      .footer-col ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .footer-col li {
+        margin-bottom: 10px;
+        color: #374151;
+        font-size: 15px;
+      }
+
+      /* شبکه‌های اجتماعی */
+      .footer-social {
+        position: absolute;
+        left: 5;
+        bottom: 0;
+        display: flex;
+        gap: 14px;
+      }
+
+      .footer-social a {
+        width: 46px;
+        height: 46px;
+        border-radius: 14px;
+        display: grid;
+        place-items: center;
+        background: rgba(15, 23, 32, 0.04);
+        transition: all 0.3s ease;
+      }
+
+      .footer-social svg {
+        width: 20px;
+        height: 20px;
+        fill: #0f1720;
+      }
+
+      .footer-social a:hover {
+        background: linear-gradient(135deg, var(--brand), #ff7a4a);
+        transform: translateY(-4px);
+      }
+
+      .footer-social a:hover svg {
+        fill: #fff;
+      }
+
+      /* پایین فوتر */
+      .footer-bottom {
+        margin-top: 60px;
+        padding: 18px 0;
+        text-align: center;
+        font-size: 14px;
+        color: #6b7280;
+        border-top: 1px solid rgba(15, 23, 32, 0.08);
+      }
+      /* ===== Footer Entrance Animation ===== */
+      .site-footer {
+        opacity: 0;
+        transform: translateY(60px);
+        transition: opacity 0.8s ease, transform 0.8s ease;
+      }
+
+      .site-footer.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .footer-col,
+      .footer-social,
+      .footer-bottom {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+      }
+
+      .site-footer.show .footer-col {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .site-footer.show .footer-col:nth-child(1) {
+        transition-delay: 0.15s;
+      }
+      .site-footer.show .footer-col:nth-child(2) {
+        transition-delay: 0.3s;
+      }
+      .site-footer.show .footer-col:nth-child(3) {
+        transition-delay: 0.45s;
+      }
+
+      .site-footer.show .footer-social {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: 0.6s;
+      }
+
+      .site-footer.show .footer-bottom {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: 0.75s;
+      }
+
+      /* ریسپانسیو */
+      @media (max-width: 768px) {
+        .footer-container {
+          grid-template-columns: 1fr;
+          gap: 36px;
+        }
+
+        .footer-social {
+          position: static;
+          margin-top: 24px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="container header-inner">
+        <div class="logo" onclick="scrollToTop()">
+          <div class="logo-icon">
+            <span class="short"> TEAM<span class="dot">.</span>max </span>
+
+            <span class="full">تیم تخصصی طراحی سایت</span>
+          </div>
+        </div>
+
+        <nav class="main-nav">
+          <a href="#services">خدمات طراحی سایت</a>
+          <a href="#pricing">تعرفه طراحی سایت</a>
+          <a href="#contact">تماس با تیم مکس</a>
+        </nav>
+        <div class="hamburger" onclick="toggleMobile()">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+      <div
+        id="mobileMenu"
+        style="max-height: 0; overflow: hidden; transition: max-height 0.3s"
+      >
+        <div
+          class="container"
+          style="
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding: 10px 0;
+          "
+        >
+          <a href="#services" onclick="toggleMobile()">خدمات طراحی سایت</a>
+          <a href="#pricing" onclick="toggleMobile()">تعرفه طراحی سایت</a>
+          <a href="#contact" onclick="toggleMobile()">تماس با تیم مکس</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <div class="hero-grid">
+          <div>
+            <h1>طراحی و فروش سایت حرفه‌ای برای رشد کسب‌وکار</h1>
+            <p>
+              ما سایت‌هایی می‌سازیم که سریع، امن و برای تبدیل طراحی شده‌اند. با
+              تیم مکس برند شما دیده و رشد می‌کند.
+            </p>
+            <div style="display: flex; gap: 12px; margin-top: 20px">
+              <a class="hero-cta" href="#pricing">شروع همکاری</a>
+              <button class="dark-toggle" onclick="toggleDarkMode(event)">
+                تغییر تم
+              </button>
+            </div>
+          </div>
+          <aside class="hero-right">
+            <div class="mini-item">
+              <div class="dot">S</div>
+              <div>
+                <h4>سفارش سریع</h4>
+                <p>راه‌اندازی محصول در کوتاه‌ترین زمان.</p>
+              </div>
+            </div>
+            <div class="mini-item">
+              <div class="dot">P</div>
+              <div>
+                <h4>پشتیبانی ۲۴/۷</h4>
+                <p>پشتیبانی حرفه‌ای پس از تحویل پروژه.</p>
+              </div>
+            </div>
+            <div class="mini-item">
+              <div class="dot">C</div>
+              <div>
+                <h4>سفارشی‌سازی کامل</h4>
+                <p>طراحی بر اساس هویت بصری شما.</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+      <section id="services" class="container" style="padding: 80px 0">
+        <h2 style="font-size: 32px; font-weight: 900; margin-bottom: 12px">
+          خدمات تخصصی تیم مکس
+        </h2>
+        <p style="color: var(--muted); max-width: 60ch; margin-bottom: 40px">
+          ما فقط سایت طراحی نمی‌کنیم؛ ابزار رشد کسب‌وکار آنلاین شما را می‌سازیم.
+        </p>
+
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+          "
+        >
+          <div class="hero-right">
+            <div class="hero-icon">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M3 12h18M3 6h18M3 18h18" />
+              </svg>
+            </div>
+            <h4>طراحی سایت شرکتی</h4>
+            <p>سایت رسمی، سریع و قابل اعتماد برای معرفی برند و جذب مشتری.</p>
+          </div>
+
+          <div class="hero-right">
+            <div class="hero-icon">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 4h16v16H4z" />
+              </svg>
+            </div>
+            <h4>طراحی سایت فروشگاهی</h4>
+            <p>فروش آنلاین حرفه‌ای با تجربه کاربری بالا و نرخ تبدیل بهتر.</p>
+          </div>
+
+          <div class="hero-right">
+            <div class="hero-icon">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 20l16-16M4 4h16v16" />
+              </svg>
+            </div>
+            <h4>طراحی UI/UX اختصاصی</h4>
+            <p>طراحی رابط کاربری بر اساس رفتار کاربران واقعی.</p>
+          </div>
+
+          <div class="hero-right">
+            <div class="hero-icon">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 14h4l2-6 4 10 2-6h4" />
+              </svg>
+            </div>
+            <h4>سئو و بهینه‌سازی</h4>
+            <p>آماده برای گوگل، سریع، ساختارمند و قابل رشد.</p>
+          </div>
+        </div>
+      </section>
+      <section class="cta-section">
+        <div class="container cta-box">
+          <div class="cta-text">
+            <h2>آماده‌ای سایتت واقعاً بفروشه؟</h2>
+            <p>با تیم مکس یک سایت سریع، امن و تبدیل‌محور تحویل بگیر.</p>
+          </div>
+
+          <a href="http://teammax.ir/links" class="cta-btn">
+            درخواست مشاوره رایگان
+          </a>
+        </div>
+      </section>
+      <section id="team" class="container team-section">
+        <h2>تیم ما</h2>
+        <div class="team-grid">
+          <div class="team-member">
+            <img src="./images/rasoul.png" alt="رسول حیدروند" />
+            <h4>رسول حیدروند</h4>
+            <p>
+              طراح ارشد و مدیر تیم مکس. مسئول استراتژی طراحی، تجربه کاربری (UX)
+              و هماهنگی پروژه‌ها با نیازهای مشتریان. رسول با بیش از ۵ سال تجربه
+              در طراحی سایت‌های شرکتی و فروشگاهی، تضمین می‌کند که هر پروژه با
+              استانداردهای بالای کیفیت و نرخ تبدیل بالا ارائه شود.
+            </p>
+            <div class="social-links">
+              <a href="https://instagram.com/nevisande2000" target="_blank"
+                >اینستاگرام ,
+              </a>
+              <a href="https://t.me/nevisande2000" target="_blank"> تلگرام ,</a>
+              <a href="https://eitaa.com/nevisande2000" target="_blank">
+                ایتا
+              </a>
+            </div>
+          </div>
+          <div class="team-member">
+            <img src="./images/mahdi.png" alt="مهدی مارزانو" />
+            <h4>مهدی Marzano</h4>
+            <p>
+              توسعه‌دهنده و متخصص پشتیبانی. مسئول پیاده‌سازی فنی سایت‌ها، توسعه
+              فرانت‌اند و اطمینان از امنیت و سرعت وبسایت. مهدی با مهارت در HTML،
+              CSS، JavaScript و فریم‌ورک‌های مدرن، تضمین می‌کند که سایت‌ها هم
+              عملکرد بالا داشته باشند و هم تجربه کاربری عالی.
+            </p>
+            <!-- <div class="social-links">
+              <a href="https://instagram.com/nevisande2000" target="_blank"
+                >Instagram</a
+              >
+              <a href="https://t.me/nevisande2000" target="_blank">Telegram</a>
+              <a href="https://eitaa.com/nevisande2000" target="_blank"
+                >Eitaa</a
+              >
+            </div> -->
+          </div>
+        </div>
+      </section>
+      <footer class="site-footer">
+        <div class="footer-container">
+          <!-- بخش 1: برند -->
+          <div class="footer-col brand">
+            <h3>TEAM<span class="dot">.</span>max</h3>
+            <p>
+              طراحی سایت‌های مدرن، سریع و سئو محور برای رشد واقعی کسب‌وکارها.
+            </p>
+          </div>
+
+          <!-- بخش 2: خدمات -->
+          <div class="footer-col">
+            <h4>خدمات ما</h4>
+            <ul>
+              <li>طراحی سایت شرکتی</li>
+              <li>طراحی سایت فروشگاهی</li>
+              <li>طراحی UI/UX اختصاصی</li>
+              <li>سئو و بهینه‌سازی</li>
+            </ul>
+          </div>
+
+          <!-- بخش 3: تماس -->
+          <div class="footer-col">
+            <h4>ارتباط با ما</h4>
+            <ul>
+              <li>📧 info@teammax.ir</li>
+              <li>📞 09xx xxx xxxx</li>
+              <li>📍 ایران / ریموت</li>
+            </ul>
+          </div>
+
+          <!-- شبکه‌های اجتماعی -->
+          <div class="footer-social">
+            <a href="#" aria-label="Telegram">
+              <svg viewBox="0 0 24 24">
+                <path d="M22 2L2 11l5 2 2 7 4-4 6 4 3-18z" />
+              </svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 5a5 5 0 100 10 5 5 0 000-10zm6.5-.9a1.1 1.1 0 11-2.2 0 1.1 1.1 0 012.2 0z"
+                />
+              </svg>
+            </a>
+            <a href="#" aria-label="Eitaa">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 12l16-8-6 16-2-6-6-2z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">© 2025 Team Max — All rights reserved.</div>
+      </footer>
+    </main>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        /* ===== Mobile Menu ===== */
+        window.toggleMobile = function () {
+          const menu = document.getElementById("mobileMenu");
+          if (!menu) return;
+
+          const isOpen = menu.style.maxHeight && menu.style.maxHeight !== "0px";
+          menu.style.maxHeight = isOpen ? "0px" : "400px";
+        };
+
+        /* ===== Scroll To Top ===== */
+        window.scrollToTop = function () {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        };
+
+        /* ===== Dark Mode ===== */
+        window.toggleDarkMode = function (e) {
+          e.stopPropagation();
+          const btn = e.currentTarget;
+
+          document.body.classList.toggle("dark");
+          btn.textContent = document.body.classList.contains("dark")
+            ? "روز"
+            : "شب";
+        };
+
+        /* ===== Footer Animation ===== */
+        const footer = document.querySelector(".site-footer");
+        if (footer) {
+          const footerObserver = new IntersectionObserver(
+            (entries, observer) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  footer.classList.add("show");
+                  observer.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.2 }
+          );
+
+          footerObserver.observe(footer);
+        }
+
+        /* ===== Team Tooltip ===== */
+        const avatars = document.querySelectorAll(".avatar");
+        const tooltip = document.getElementById("avatarTooltip");
+
+        if (avatars.length && tooltip) {
+          avatars.forEach((avatar) => {
+            avatar.addEventListener("mouseenter", () => {
+              tooltip.textContent = avatar.dataset.role || "";
+              tooltip.style.opacity = "1";
+              tooltip.style.top =
+                avatar.offsetTop + avatar.offsetHeight + 8 + "px";
+              tooltip.style.left =
+                avatar.offsetLeft + avatar.offsetWidth / 2 + "px";
+            });
+
+            avatar.addEventListener("mouseleave", () => {
+              tooltip.style.opacity = "0";
+            });
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
