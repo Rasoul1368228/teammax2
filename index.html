@@ -188,14 +188,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
-
         background: transparent;
         color: var(--text);
-
         font-weight: 800;
         cursor: pointer;
         overflow: hidden;
-
         transition: transform 0.35s ease, background 0.35s ease,
           box-shadow 0.35s ease;
       }
@@ -372,18 +369,7 @@
         box-shadow: 0 30px 90px rgba(0, 0, 0, 0.6);
       }
 
-      /* موبایل */
-      @media (max-width: 760px) {
-        .cta-box {
-          flex-direction: column;
-          text-align: center;
-        }
-
-        .cta-text h2 {
-          font-size: 28px;
-        }
-      }
-
+  
       .dark-toggle {
         display: inline-flex;
         align-items: center;
@@ -461,15 +447,14 @@
         transform: translateY(1px);
       }
       .hero-right {
-        border-radius: 16px;
-        padding: 18px;
-        border: 1px solid rgba(15, 23, 32, 0.08);
-        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
-        animation: fadeInUp 1s forwards 0.4s;
-        opacity: 0;
-        transform: translateY(20px);
-        transition: transform 0.35s ease, box-shadow 0.35s ease,
-          border-color 0.35s ease, background 0.35s ease;
+        border-radius: 12px;
+  padding: 11px;
+  border: 1px solid rgba(15, 23, 32, 0.08);
+  animation: fadeInUp 1s forwards 0.4s;
+    animation-delay: 0.4s;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease, background 0.35s ease;
       }
       .hero-right:hover .hero-icon {
         transform: scale(1.1);
@@ -584,24 +569,7 @@
         }
       }
 
-      @media (max-width: 1000px) {
-        .hero-grid {
-          grid-template-columns: 1fr 320px;
-        }
-      }
-      @media (max-width: 760px) {
-        nav.main-nav {
-          display: none;
-        }
-        .hamburger {
-          display: flex;
-        }
-        .hero-grid {
-          grid-template-columns: 1fr;
-          gap: 28px;
-        }
-      }
-
+    
       /* ====== Team Section ====== */
       .team-section {
         padding: 80px 0;
@@ -676,19 +644,7 @@
         box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
       }
 
-      /* Responsive */
-      @media (max-width: 760px) {
-        .team-grid {
-          grid-template-columns: 1fr 1fr;
-        }
-      }
-
-      @media (max-width: 500px) {
-        .team-grid {
-          grid-template-columns: 1fr;
-        }
-      }
-
+   
       .site-footer {
         margin-top: 50px;
         padding: 70px 0 0;
@@ -831,19 +787,150 @@
         transform: translateY(0);
         transition-delay: 0.75s;
       }
+/* ================== TABLET & DOWN ================== */
+@media (max-width: 1000px) {
+  .hero-grid {
+    grid-template-columns: 1fr 300px;
+  }
 
-      /* ریسپانسیو */
-      @media (max-width: 768px) {
-        .footer-container {
-          grid-template-columns: 1fr;
-          gap: 36px;
-        }
+  .hero h1 {
+    font-size: 30px;
+  }
+}
 
-        .footer-social {
-          position: static;
-          margin-top: 24px;
-        }
-      }
+/* ================== MOBILE ================== */
+@media (max-width: 760px) {
+
+  /* ---------- Header ---------- */
+  nav.main-nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .header-inner {
+    padding: 10px 0;
+  }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    padding: 60px 0 40px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .hero h1 {
+    font-size: 25px;
+    line-height: 1.2;
+  }
+
+  .hero p {
+    font-size: 12px;
+  }
+
+  .hero-cta,
+  .dark-toggle {
+    width: 40%;
+    justify-content: center;
+  }
+
+  .hero > div > div {
+    flex-direction: column;
+  }
+
+  /* ---------- Services ---------- */
+  #services {
+    padding: 40px 0;
+  }
+
+  #services h2 {
+    font-size: 20px;
+  }
+
+  /* ---------- CTA ---------- */
+  .cta-section {
+    padding: 30px 0;
+  }
+
+  .cta-box {
+  flex-direction: column;
+    padding: 11px 35px;
+  }
+
+  .cta-text h2 {
+    font-size: 20px;
+  }
+
+  .cta-btn {
+    width: 80%;
+    text-align: center;
+  }
+
+  /* ---------- Team ---------- */
+  .team-section {
+    padding: 60px 0;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .team-member {
+    text-align: center;
+  }
+
+  .team-member img {
+    margin: 0 auto 14px;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  /* ---------- Footer ---------- */
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-social {
+    position: static;
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    font-size: 10px;
+  }
+}
+
+/* ================== SMALL MOBILE ================== */
+@media (max-width: 480px) {
+
+  .hero h1 {
+    font-size: 20px;
+  }
+
+  .cta-text h2 {
+    font-size: 20px;
+  }
+
+  .logo-icon {
+    width: auto;
+    padding: 0 12px;
+  }
+
+  .logo-icon .short {
+    font-size: 12px;
+  }
+}
+
+    
     </style>
   </head>
 
@@ -1020,7 +1107,7 @@
           </div>
           <div class="team-member">
             <img src="./images/mahdi.png" alt="مهدی مارزانو" />
-            <h4>مهدی Marzano</h4>
+            <h4>74 Marzano</h4>
             <p>
               توسعه‌دهنده و متخصص پشتیبانی. مسئول پیاده‌سازی فنی سایت‌ها، توسعه
               فرانت‌اند و اطمینان از امنیت و سرعت وبسایت. مهدی با مهارت در HTML،
@@ -1135,7 +1222,7 @@
                 }
               });
             },
-            { threshold: 0.2 }
+            { threshold: 0.1 }
           );
 
           footerObserver.observe(footer);
