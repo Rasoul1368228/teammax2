@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تیم مکس | طراحی سایت حرفه‌ای، فروشگاهی و شرکتی</title>
+    <!-- ================== SEO Meta ================== -->
+    <meta
+      name="description"
+      content="تیم مکس، ارائه‌دهنده خدمات طراحی سایت حرفه‌ای شرکتی و فروشگاهی با تجربه کاربری عالی، سئو بهینه و سرعت بالا برای رشد کسب‌وکار شما."
+    />
+    <meta
+      name="keywords"
+      content="طراحی سایت، سایت شرکتی، سایت فروشگاهی، UI/UX، تیم مکس، توسعه وب، سئو سایت، وبسایت حرفه‌ای"
+    />
+    <meta name="author" content="تیم مکس" />
+    <link rel="canonical" href="https://teammax.ir/" />
+    <!-- ================== Open Graph ================== -->
+    <meta property="og:title" content="تیم مکس | طراحی سایت حرفه‌ای" />
+    <meta
+      property="og:description"
+      content="سایت‌های حرفه‌ای با طراحی مدرن، سرعت بالا و سئو بهینه. راه‌حل کامل برای کسب‌وکار آنلاین شما."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://teammax.ir/" />
+    <meta
+      property="og:image"
+      content="https://teammax.ir/images/og-image.png"
+    />
+    <meta property="og:locale" content="fa_IR" />
+    <meta property="og:site_name" content="تیم مکس" />
+
+    <!-- ================== Twitter Card ================== -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="تیم مکس | طراحی سایت حرفه‌ای" />
+    <meta
+      name="twitter:description"
+      content="سایت‌های حرفه‌ای با طراحی مدرن، سرعت بالا و سئو بهینه. راه‌حل کامل برای کسب‌وکار آنلاین شما."
+    />
+    <meta
+      name="twitter:image"
+      content="https://teammax.ir/images/og-image.png"
+    />
+    <meta name="twitter:site" content="@TeamMax" />
+
+    <!-- ================== Favicons ================== -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <!-- ================== css ================== -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <!-- ================== Structured Data (JSON-LD) ================== -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "تیم مکس",
+        "url": "https://teammax.ir/",
+        "logo": "https://teammax.ir/images/logo.png",
+        "sameAs": [
+          "https://instagram.com/nevisande2000",
+          "https://t.me/nevisande2000",
+          "https://eitaa.com/nevisande2000"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+98-21-12345678",
+          "contactType": "customer service",
+          "areaServed": "IR",
+          "availableLanguage": ["فارسی", "انگلیسی"]
+        }
+      }
+    </script>
+
+    <!-- ================== Fonts ================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dana:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="container header-inner">
+        <div class="logo" onclick="scrollToTop()">
+          <div class="logo-icon">
+            <span class="short"> TEAM<span class="dot">.</span>max </span>
+
+            <span class="full">تیم تخصصی طراحی سایت</span>
+          </div>
+        </div>
+
+        <nav class="main-nav">
+          <a href="#services">خدمات طراحی سایت</a>
+          <a href="#pricing">تعرفه طراحی سایت</a>
+          <a href="#contact">تماس با تیم مکس</a>
+        </nav>
+        <div class="hamburger" onclick="toggleMobile()">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+      <div
+        id="mobileMenu"
+        style="max-height: 0; overflow: hidden; transition: max-height 0.3s"
+      >
+        <div
+          class="container"
+          style="
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding: 10px 0;
+          "
+        >
+          <a href="#services" onclick="toggleMobile()">خدمات طراحی سایت</a>
+          <a href="#pricing" onclick="toggleMobile()">تعرفه طراحی سایت</a>
+          <a href="#contact" onclick="toggleMobile()">تماس با تیم مکس</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero container">
+        <div class="hero-grid">
+          <div>
+            <h1>طراحی و فروش سایت حرفه‌ای برای رشد کسب‌وکار</h1>
+            <p>
+              ما سایت‌هایی می‌سازیم که سریع، امن و برای تبدیل طراحی شده‌اند. با
+              تیم مکس برند شما دیده و رشد می‌کند.
+            </p>
+            <div style="display: flex; gap: 12px; margin-top: 20px">
+              <a class="hero-cta" href="#pricing">شروع همکاری</a>
+              <button class="dark-toggle" onclick="toggleDarkMode(event)">
+                تغییر تم
+              </button>
+            </div>
+          </div>
+          <aside class="hero-right">
+            <div class="mini-item">
+              <div class="dot">S</div>
+              <div>
+                <h4>سفارش سریع</h4>
+                <p>راه‌اندازی محصول در کوتاه‌ترین زمان.</p>
+              </div>
+            </div>
+            <div class="mini-item">
+              <div class="dot">P</div>
+              <div>
+                <h4>پشتیبانی ۲۴/۷</h4>
+                <p>پشتیبانی حرفه‌ای پس از تحویل پروژه.</p>
+              </div>
+            </div>
+            <div class="mini-item">
+              <div class="dot">C</div>
+              <div>
+                <h4>سفارشی‌سازی کامل</h4>
+                <p>طراحی بر اساس هویت بصری شما.</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Services Section
+      <section id="services" class="container" style="padding: 80px 0">
+        <h2 style="font-size: 32px; font-weight: 900; margin-bottom: 12px">
+          خدمات تخصصی تیم مکس
+        </h2>
+        <p style="color: var(--muted); max-width: 60ch; margin-bottom: 40px">
+          ما فقط سایت طراحی نمی‌کنیم؛ ابزار رشد کسب‌وکار آنلاین شما را می‌سازیم.
+        </p>
+
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+          "
+        >
+          <div class="hero-right">
+            <div class="hero-icon">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M3 12h18M3 6h18M3 18h18" />
+              </svg>
+            </div>
+            <h4>طراحی سایت شرکتی</h4>
+            <p>سایت رسمی، سریع و قابل اعتماد برای معرفی برند و جذب مشتری.</p>
+          </div>
+
+          <div class="hero-right">
+            <div class="hero-icon">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 4h16v16H4z" />
+              </svg>
+            </div>
+            <h4>طراحی سایت فروشگاهی</h4>
+            <p>فروش آنلاین حرفه‌ای با تجربه کاربری بالا و نرخ تبدیل بهتر.</p>
+          </div>
+
+          <div class="hero-right">
+            <div class="hero-icon">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 20l16-16M4 4h16v16" />
+              </svg>
+            </div>
+            <h4>طراحی UI/UX اختصاصی</h4>
+            <p>طراحی رابط کاربری بر اساس رفتار کاربران واقعی.</p>
+          </div>
+
+          <div class="hero-right">
+            <div class="hero-icon">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 14h4l2-6 4 10 2-6h4" />
+              </svg>
+            </div>
+            <h4>سئو و بهینه‌سازی</h4>
+            <p>آماده برای گوگل، سریع، ساختارمند و قابل رشد.</p>
+          </div>
+        </div>
+      </section> -->
+
+      <section id="services">
+        <h2 class="section-title">خدمات تخصصی تیم مکس</h2>
+        <p class="section-subtitle">
+          ما ابزار رشد کسب‌وکار آنلاین شما را با کیفیت و حرفه‌ای می‌سازیم.
+        </p>
+
+        <div class="slider-container">
+          <div class="slider-track" id="slider">
+            <div class="slider-item">
+              <div class="hero-icon">🏢</div>
+              <h4>سایت شرکتی</h4>
+              <p
+                data-full="ایجاد سایت رسمی و قابل اعتماد برای معرفی برند و جذب مشتریان با استانداردهای روز."
+                data-short="سایت شرکتی حرفه‌ای."
+              >
+                سایت شرکتی حرفه‌ای.
+              </p>
+            </div>
+            <div class="slider-item">
+              <div class="hero-icon">🛒</div>
+              <h4>فروشگاه آنلاین</h4>
+              <p
+                data-full="راه‌اندازی فروشگاه آنلاین حرفه‌ای با تجربه کاربری عالی و افزایش نرخ تبدیل."
+                data-short="فروشگاه آنلاین حرفه‌ای."
+              >
+                فروشگاه آنلاین حرفه‌ای.
+              </p>
+            </div>
+            <div class="slider-item">
+              <div class="hero-icon">🎨</div>
+              <h4>UI/UX اختصاصی</h4>
+              <p
+                data-full="رابط کاربری منحصربه‌فرد و تجربه‌ای کاربرپسند بر اساس تحلیل رفتار کاربران واقعی."
+                data-short="رابط کاربری منحصربه‌فرد."
+              >
+                رابط کاربری منحصربه‌فرد.
+              </p>
+            </div>
+            <div class="slider-item">
+              <div class="hero-icon">📈</div>
+              <h4>سئو حرفه‌ای</h4>
+              <p
+                data-full="سایت بهینه برای موتورهای جستجو، سرعت بالا و ساختار حرفه‌ای."
+                data-short="سئو حرفه‌ای سایت."
+              >
+                سئو حرفه‌ای سایت.
+              </p>
+            </div>
+            <div class="slider-item">
+              <div class="hero-icon">💡</div>
+              <h4>دیجیتال مارکتینگ</h4>
+              <p
+                data-full="استراتژی رشد آنلاین، افزایش فروش و تقویت برند شما."
+                data-short="استراتژی دیجیتال مارکتینگ."
+              >
+                استراتژی دیجیتال مارکتینگ.
+              </p>
+            </div>
+            <div class="slider-item">
+              <div class="hero-icon">🔒</div>
+              <h4>امنیت و پشتیبانی</h4>
+              <p
+                data-full="بکاپ‌گیری منظم، بروزرسانی و رفع مشکلات فنی تا سایت امن و پایدار بماند."
+                data-short="امنیت و پشتیبانی سایت."
+              >
+                امنیت و پشتیبانی سایت.
+              </p>
+            </div>
+            <div class="slider-item">
+              <div class="hero-icon">⚡</div>
+              <h4>سرعت و عملکرد</h4>
+              <p
+                data-full="بهینه‌سازی تصاویر و اسکریپت‌ها، افزایش سرعت و تجربه روان کاربری."
+                data-short="سرعت و عملکرد بهتر."
+              >
+                سرعت و عملکرد بهتر.
+              </p>
+            </div>
+            <div class="slider-item">
+              <div class="hero-icon">🤝</div>
+              <h4>برندسازی دیجیتال</h4>
+              <p
+                data-full="طراحی هویت دیجیتال و کمپین‌های تبلیغاتی برای تقویت برند و اعتماد مشتریان."
+                data-short="هویت دیجیتال و کمپین تبلیغاتی."
+              >
+                هویت دیجیتال و کمپین تبلیغاتی.
+              </p>
+            </div>
+          </div>
+
+          <div class="slider-nav prev" onclick="scrollSlider(-1)">‹</div>
+          <div class="slider-nav next" onclick="scrollSlider(1)">›</div>
+        </div>
+      </section>
+
+      <!-- Call to Action Section -->
+      <section class="cta-section">
+        <div class="container cta-box">
+          <div class="cta-text">
+            <h2>آماده‌ای سایتت واقعاً بفروشه؟</h2>
+            <p>با تیم مکس یک سایت سریع، امن و تبدیل‌محور تحویل بگیر.</p>
+          </div>
+          <a href="http://teammax.ir/links" class="cta-btn"
+            >درخواست مشاوره رایگان</a
+          >
+        </div>
+      </section>
+
+      <!-- Team Section -->
+      <section id="team" class="container team-section">
+        <h2>تیم ما</h2>
+        <div class="team-grid">
+          <div class="team-member">
+            <img src="./images/rasoul.png" alt="رسول حیدروند" />
+            <h4>رسول حیدروند</h4>
+            <p>
+              طراح ارشد و مدیر تیم مکس. مسئول استراتژی طراحی، تجربه کاربری (UX)
+              و هماهنگی پروژه‌ها با نیازهای مشتریان. رسول با بیش از ۵ سال تجربه
+              در طراحی سایت‌های شرکتی و فروشگاهی، تضمین می‌کند که هر پروژه با
+              استانداردهای بالای کیفیت و نرخ تبدیل بالا ارائه شود.
+            </p>
+            <div class="social-links">
+              <a href="https://instagram.com/nevisande2000" target="_blank"
+                >اینستاگرام ,</a
+              >
+              <a href="https://t.me/nevisande2000" target="_blank">تلگرام ,</a>
+              <a href="https://eitaa.com/nevisande2000" target="_blank">ایتا</a>
+            </div>
+          </div>
+          <div class="team-member">
+            <img src="./images/mahdi.png" alt="مهدی مارزانو" />
+            <h4>74 Marzano</h4>
+            <p>
+              توسعه‌دهنده و متخصص پشتیبانی. مسئول پیاده‌سازی فنی سایت‌ها، توسعه
+              فرانت‌اند و اطمینان از امنیت و سرعت وبسایت. مهدی با مهارت در HTML،
+              CSS، JavaScript و فریم‌ورک‌های مدرن، تضمین می‌کند که سایت‌ها هم
+              عملکرد بالا داشته باشند و هم تجربه کاربری عالی.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Section -->
+      <footer class="site-footer">
+        <div class="footer-container">
+          <!-- بخش 1: برند -->
+          <div class="footer-col brand">
+            <h3>TEAM<span class="dot">.</span>max</h3>
+            <p>
+              طراحی سایت‌های مدرن، سریع و سئو محور برای رشد واقعی کسب‌وکارها.
+            </p>
+          </div>
+
+          <!-- بخش 2: خدمات -->
+          <div class="footer-col">
+            <h4>خدمات ما</h4>
+            <ul>
+              <li>طراحی سایت شرکتی</li>
+              <li>طراحی سایت فروشگاهی</li>
+              <li>طراحی UI/UX اختصاصی</li>
+              <li>سئو و بهینه‌سازی</li>
+            </ul>
+          </div>
+
+          <!-- بخش 3: تماس -->
+          <div class="footer-col">
+            <h4>ارتباط با ما</h4>
+            <ul>
+              <li>📧 info@teammax.ir</li>
+              <li>📞 09xx xxx xxxx</li>
+              <li>📍 ایران / ریموت</li>
+            </ul>
+          </div>
+
+          <!-- شبکه‌های اجتماعی -->
+          <div class="footer-social">
+            <a href="#" aria-label="Telegram">
+              <svg viewBox="0 0 24 24">
+                <path d="M22 2L2 11l5 2 2 7 4-4 6 4 3-18z" />
+              </svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 5a5 5 0 100 10 5 5 0 000-10zm6.5-.9a1.1 1.1 0 11-2.2 0 1.1 1.1 0 012.2 0z"
+                />
+              </svg>
+            </a>
+            <a href="#" aria-label="Eitaa">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 12l16-8-6 16-2-6-6-2z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">© 2025 Team Max — All rights reserved.</div>
+      </footer>
+
+      <!-- SEO Notification -->
+      <div class="seo-notification">
+        <p>
+          🚀 سایت شما آماده برای سئو و بهینه‌سازی هست؟ تیم مکس شما رو به صفحات
+          اول گوگل میاره!
+        </p>
+        <a href="#services" class="cta-btn">مشاوره رایگان سئو</a>
+      </div>
+    </main>
+
+    <script>
+      const slider = document.getElementById("slider");
+
+      function scrollSlider(direction) {
+        const itemWidth = slider.querySelector(".slider-item").offsetWidth + 16;
+        slider.scrollBy({ left: direction * itemWidth, behavior: "smooth" });
+      }
+
+      // Auto-scroll
+      let autoScroll = setInterval(() => scrollSlider(1), 3000);
+      slider.addEventListener("mouseenter", () => clearInterval(autoScroll));
+      slider.addEventListener("mouseleave", () => {
+        autoScroll = setInterval(() => scrollSlider(1), 3000);
+      });
+
+      // کوتاه کردن متن در موبایل
+      function adjustText() {
+        const isMobile = window.innerWidth <= 768;
+        slider.querySelectorAll(".slider-item p").forEach((p) => {
+          p.textContent = isMobile ? p.dataset.short : p.dataset.full;
+        });
+      }
+      window.addEventListener("resize", adjustText);
+      window.addEventListener("load", adjustText);
+      window.addEventListener("load", function () {
+        const seoNotification = document.querySelector(".seo-notification");
+
+        // انیمیشن نمایش نوتیفیکیشن
+        setTimeout(function () {
+          seoNotification.style.bottom = "20px"; // حرکت به بالا
+          seoNotification.style.opacity = "1"; // شفافیت 100%
+        }, 1000); // یک ثانیه بعد از بارگذاری صفحه
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        // ===== Mobile Menu =====
+        window.toggleMobile = function () {
+          const menu = document.getElementById("mobileMenu");
+          if (!menu) return;
+
+          const isOpen = menu.style.maxHeight && menu.style.maxHeight !== "0px";
+          menu.style.maxHeight = isOpen ? "0px" : "400px";
+        };
+
+        // ===== Scroll To Top =====
+        window.scrollToTop = function () {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        };
+
+        // ===== Dark Mode =====
+        window.toggleDarkMode = function (e) {
+          e.stopPropagation();
+          const btn = e.currentTarget;
+
+          document.body.classList.toggle("dark");
+          btn.textContent = document.body.classList.contains("dark")
+            ? "روز"
+            : "شب";
+        };
+
+        // ===== Footer Animation =====
+        const footer = document.querySelector(".site-footer");
+        if (footer) {
+          const footerObserver = new IntersectionObserver(
+            (entries, observer) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  footer.classList.add("show");
+                  observer.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.1 }
+          );
+
+          footerObserver.observe(footer);
+        }
+
+        // ===== Team Tooltip =====
+        const avatars = document.querySelectorAll(".avatar");
+        const tooltip = document.getElementById("avatarTooltip");
+
+        if (avatars.length && tooltip) {
+          avatars.forEach((avatar) => {
+            avatar.addEventListener("mouseenter", () => {
+              tooltip.textContent = avatar.dataset.role || "";
+              tooltip.style.opacity = "1";
+              tooltip.style.top =
+                avatar.offsetTop + avatar.offsetHeight + 8 + "px";
+              tooltip.style.left =
+                avatar.offsetLeft + avatar.offsetWidth / 2 + "px";
+            });
+
+            avatar.addEventListener("mouseleave", () => {
+              tooltip.style.opacity = "0";
+            });
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
